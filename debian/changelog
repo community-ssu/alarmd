@@ -1,3 +1,9 @@
+alarmd (1.1.16+0m5+0cssu0+thumb0) unstable; urgency=low
+
+  * Thumb2 compiled
+
+ -- Ivaylo Dimitrov <freemangordon@abv.bg>  Sat, 16 Jun 2012 09:39:32 +0300
+
 alarmd (1.1.16+0m5+0cssu0) unstable; urgency=low
 
   * Fixes: Alarmd does not correctly replace [COOKIE] in exec string
