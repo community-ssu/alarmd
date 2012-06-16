@@ -100,6 +100,7 @@ CFLAGS   += -std=c99
 CFLAGS   += -Os
 CFLAGS   += -g
 CFLAGS   += -Werror
+CFLAGS   += -mthumb -fgnu89-inline
 
 LDFLAGS  += -g
 
