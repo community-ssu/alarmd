@@ -12,12 +12,13 @@ Build-Depends: debhelper (>= 4.1.0),
  libdsme0.2.0-dev,
  mce-dev,
  statusbar-alarm-dev,
- doxygen
+ doxygen,
+ libgtk2.0-dev
 Standards-Version: 3.7.2
 
 Package: alarmd
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, kernel-feature-errata-430973-workaround
 Recommends: osso-systemui-alarm
 Conflicts: osso-systemui-alarm (<< 0.2.1.5)
 Description: alarm daemon
@@ -36,7 +37,7 @@ Description: debug symbols for alarmd
 
 Package: alarmclient
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, kernel-feature-errata-430973-workaround
 Description: test tool for alarmd access
  Command line utility for testing and debugging alarmd features.
 
@@ -52,7 +53,7 @@ Description: debug symbols for alarmclient
 Package: libalarm2
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, kernel-feature-errata-430973-workaround
 Description: client library for communicating with alarmd
  Client side API for adding, removing and querying events
  in alarmd queue.
